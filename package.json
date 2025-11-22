@@ -13,9 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/harikrishnanpu/token-hub.git"
   },
-  "publishConfig": {
-  "registry": "https://npm.pkg.github.com"
-},
   "license": "MIT",
   "author": "HariKrishnan P U",
   "type": "module",

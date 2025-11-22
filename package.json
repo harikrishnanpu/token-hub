@@ -1,6 +1,6 @@
 {
   "name": "token-hub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "keywords": [
     "jwt"
@@ -17,6 +17,8 @@
   "author": "HariKrishnan P U",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -21,11 +21,10 @@ yarn add token-hub
 
 import { TokenService } from "token-hub";
 
-const tokenService = new TokenService({
-  accessSecret: process.env.ACCESS_SECRET!,
-  refreshSecret: process.env.REFRESH_SECRET!,
-  store: undefined, // optional
-});
+const tokenService = new TokenService(
+  process.env.ACCESS_SECRET!, 
+  process.env.REFRESH_SECRET!,
+  store: undefined, // optional);
 
 
 const { accessToken, refreshToken } = await tokenService.generateTokens({userId: 'userid'});
@@ -96,8 +95,8 @@ class MyStore implements RefreshTokenStore {
 
 const store = new MyStore();
 
-const tokenService = new TokenService({
+const tokenService = new TokenService(
   accessSecret: process.env.ACCESS_SECRET!,
   refreshSecret: process.env.REFRESH_SECRET!,
   store,
-});
+);
